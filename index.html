@@ -12,16 +12,29 @@
     <link rel="canonical" href="https://xx99xx.xyz/">
     <meta name="robots" content="index, follow">
     <style>
-        /* 你原来的 CSS 代码保持不变，直接粘贴在这里 */
-        * {box-sizing: border-box}
-body{
-  margin:0;
-  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC";
-  background:linear-gradient(135deg,#ff6b6b,#ff9f6b);
-  display:flex;
-  justify-content:center;
+ 
+/* 顶级下载按钮 - 手机适配版 */
+.btn-super {
+  position: relative;
+  display: inline-block;
+  /* 手机端缩小内边距 */
+  padding: 6px 16px; 
+  /* 缩小字号 */
+  font-size: 13px; 
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  /* 缩小圆角 */
+  border-radius: 8px; 
+  overflow: hidden;
+  /* 渐变背景保持不变 */
+  background: linear-gradient(270deg, #ff416c, #ff4b2b);
+  background-size: 200% 200%;
+  animation: gradientMove 6s ease infinite, glow 2s infinite;
+  /* 增加点击区域，防止太小不好点 */
+  min-width: 80px;
+  text-align: center;
 }
-
 /* 主卡片 */
 .card{
   width:100%;
